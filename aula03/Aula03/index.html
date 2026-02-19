@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<h1>Gerenciador de Produtos</h1>
+<div id="form-produto">
+    <h2>Adicionar produto</h2>
+    <label for="nome">nome:</label>
+    <input type="text" name="nome" id="nome"></input>
+
+
+    <label for="">preco</label>
+    <input type="number" name="preco" id=""preco"></input>
+
+    <label for="disponivel">disponivel</label>
+    <select name="disponivel" id="disponivel">
+        <option value="true">sim</option>
+        <option value="false">não</option>
+        </select><br>
+
+    <button oneclick="adicionarprodutos()">adicionar</button>
+
+</div>
+
+        <h2>Lista produto</h2>
+        <div id="listar-produto">
+            <!-- os produtos serao exibidos dinamicamente com java script -->
+
+        </div>
+
+
+
+
+    <script>src="js/script.js"</script>
+</body>
+</html>
