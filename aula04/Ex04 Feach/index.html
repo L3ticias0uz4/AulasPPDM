@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Produto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Cadastro de Produtos</h1>
+
+        <form id="produtosForm">
+            <label for="nome">Nome:</label>
+            <label type="preco">Preço:</label>
+            <input type="number" name="preco" id="preco" step="0.10" required>
+
+            <label for="disponibilidade">Disponibilidade:</label>
+            <select id="disponibilidade" name="disponibilidade">
+                <option value="Disponivel">Disponivel</option>
+                <option value="Indisponivel">Indisponivel</option>
+
+            </select>
+            <input type="hidden"id ="produtoId">
+            <button type="submit">Salvar</button>
+            <button type="button" id="cancelar">Cancelar</button>
+
+            <h2>Lista de Produtos</h2>
+            <table id="produtotale">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Disponibilidade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+        </form>
+    </div> 
+     <script src="js.ex04fetch.js"></script>
+</body>
+</html>
